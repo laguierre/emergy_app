@@ -48,13 +48,18 @@ class EmergencyPage extends StatelessWidget {
     List<Widget> itemMap = items
         .map((item) => FadeInLeft(
       duration: Duration(milliseconds: 200),
-          child: BtnEmercency(
+          child: Column(
+            children: [
+              BtnEmercency(
                 text: item.texto,
                 onPress: () {},
                 icon: item.icon,
                 Color1: item.color1,
                 Color2: item.color2,
               ),
+              SizedBox(height: 20,),
+            ],
+          ),
         ))
         .toList();
 
@@ -101,20 +106,7 @@ class _Header extends StatelessWidget {
   }
 }
 
-class _BtnEmercency extends StatelessWidget {
-  const _BtnEmercency({
-    Key? key,
-  }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return BtnEmercency(
-      icon: FontAwesomeIcons.carCrash,
-      text: 'Crush Accident',
-      onPress: () {},
-    );
-  }
-}
 
 class PageHeader extends StatelessWidget {
   const PageHeader({

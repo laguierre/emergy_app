@@ -30,10 +30,11 @@ class BtnEmercency extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 140, width: 40),
-              FaIcon(icon, color: Colors.white, size: 40),
-              const SizedBox(width: 20),
+              const SizedBox(height: 100, width: 40),
+              FaIcon(icon, color: Colors.white, size: 50),
+              const SizedBox(width: 30),
               Expanded(
                   child: Text(text,
                       style: const TextStyle(color: Colors.white, fontSize: 18))),
