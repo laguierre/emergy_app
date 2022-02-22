@@ -12,6 +12,6 @@ Aplicación de Asistencia Médica usando ListView
 
 ## Screenshots
 <p align="center">
-<img src="https://github.com/laguierre/cuenta_dni_clone/blob/master/screenshots/Screenshot_1644953358.png" height="700">
-<img src="https://github.com/laguierre/cuenta_dni_clone/blob/master/screenshots/Screenshot_1644953381.png" height="700">
+<img src="https://github.com/laguierre/emergy_app/blob/master/screenshots/Screenshot_1645489792.png" height="700">
+<img src="https://github.com/laguierre/emergy_app/blob/master/screenshots/Screenshot_1645489798.png" height="700">
 </p>
