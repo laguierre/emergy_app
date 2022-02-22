@@ -19,35 +19,35 @@ class EmergencyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = <ItemBoton>[
-      new ItemBoton(FontAwesomeIcons.carCrash, 'Motor Accident',
-          Color(0xff6989F5), Color(0xff906EF5)),
-      new ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
-          Color(0xff66A9F2), Color(0xff536CF6)),
-      new ItemBoton(FontAwesomeIcons.theaterMasks, 'Theft / Harrasement',
-          Color(0xffF2D572), Color(0xffE06AA3)),
-      new ItemBoton(FontAwesomeIcons.biking, 'Awards', Color(0xff317183),
-          Color(0xff46997D)),
-      new ItemBoton(FontAwesomeIcons.carCrash, 'Motor Accident',
-          Color(0xff6989F5), Color(0xff906EF5)),
-      new ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
-          Color(0xff66A9F2), Color(0xff536CF6)),
-      new ItemBoton(FontAwesomeIcons.theaterMasks, 'Theft / Harrasement',
-          Color(0xffF2D572), Color(0xffE06AA3)),
-      new ItemBoton(FontAwesomeIcons.biking, 'Awards', Color(0xff317183),
-          Color(0xff46997D)),
-      new ItemBoton(FontAwesomeIcons.carCrash, 'Motor Accident',
-          Color(0xff6989F5), Color(0xff906EF5)),
-      new ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
-          Color(0xff66A9F2), Color(0xff536CF6)),
-      new ItemBoton(FontAwesomeIcons.theaterMasks, 'Theft / Harrasement',
-          Color(0xffF2D572), Color(0xffE06AA3)),
-      new ItemBoton(FontAwesomeIcons.biking, 'Awards', Color(0xff317183),
-          Color(0xff46997D)),
+      ItemBoton(FontAwesomeIcons.carCrash, 'Motor Accident',
+          const Color(0xff6989F5), const Color(0xff906EF5)),
+      ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
+          const Color(0xff66A9F2), const Color(0xff536CF6)),
+      ItemBoton(FontAwesomeIcons.theaterMasks, 'Theft / Harrasement',
+          const Color(0xffF2D572), const Color(0xffE06AA3)),
+      ItemBoton(FontAwesomeIcons.biking, 'Awards', const Color(0xff317183),
+          const Color(0xff46997D)),
+      ItemBoton(FontAwesomeIcons.carCrash, 'Motor Accident',
+          const Color(0xff6989F5), const Color(0xff906EF5)),
+      ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
+          const Color(0xff66A9F2), const Color(0xff536CF6)),
+      ItemBoton(FontAwesomeIcons.theaterMasks, 'Theft / Harrasement',
+          const Color(0xffF2D572), const Color(0xffE06AA3)),
+      ItemBoton(FontAwesomeIcons.biking, 'Awards', const Color(0xff317183),
+          const Color(0xff46997D)),
+      ItemBoton(FontAwesomeIcons.carCrash, 'Motor Accident',
+          const Color(0xff6989F5), const Color(0xff906EF5)),
+      ItemBoton(FontAwesomeIcons.plus, 'Medical Emergency',
+          const Color(0xff66A9F2), const Color(0xff536CF6)),
+      ItemBoton(FontAwesomeIcons.theaterMasks, 'Theft / Harrasement',
+          const Color(0xffF2D572), const Color(0xffE06AA3)),
+      ItemBoton(FontAwesomeIcons.biking, 'Awards', const Color(0xff317183),
+          const Color(0xff46997D)),
     ];
 
     List<Widget> itemMap = items
         .map((item) => FadeInLeft(
-      duration: Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 200),
           child: Column(
             children: [
               BtnEmercency(
@@ -57,7 +57,7 @@ class EmergencyPage extends StatelessWidget {
                 Color1: item.color1,
                 Color2: item.color2,
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
             ],
           ),
         ))
@@ -66,13 +66,13 @@ class EmergencyPage extends StatelessWidget {
     return Scaffold(
       body: Stack(children: [
         Container(
-          margin: EdgeInsets.only(top: 200),
+          margin: const EdgeInsets.only(top: 200),
           child: ListView(
             physics: const BouncingScrollPhysics(),
-            children: [SizedBox(height: 80.0), ...itemMap],
+            children: [const SizedBox(height: 80.0), ...itemMap],
           ),
         ),
-        _Header(),
+        const _Header(),
       ]),
     );
   }
@@ -87,7 +87,7 @@ class _Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconHeader(
+        const IconHeader(
             icon: FontAwesomeIcons.plus,
             title: 'Asistencia Médica',
             subtitle: 'Haz solocitado'),
@@ -96,9 +96,9 @@ class _Header extends StatelessWidget {
             top: 45.0,
             child: RawMaterialButton(
               onPressed: (){},
-              shape: CircleBorder(),
-              padding: EdgeInsets.all(15.0),
-              child: FaIcon(FontAwesomeIcons.ellipsisV,
+              shape: const CircleBorder(),
+              padding: const EdgeInsets.all(15.0),
+              child: const FaIcon(FontAwesomeIcons.ellipsisV,
               color: Colors.white),
             ))
       ],

@@ -1,16 +1,17 @@
-# emergy_app
+# Asistencia Médica App
 
-A new Flutter project.
+Aplicación de Asistencia Médica usando ListView
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## General Info
 
-A few resources to get you started if this is your first Flutter project:
+**Packages used:**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- font_awesome_flutter: ^9.2.0 [link](https://pub.dev/packages/font_awesome_flutter)
+- animate_do: ^2.0.0 [link](https://pub.dev/packages/animate_do)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<p align="center">
+<img src="https://github.com/laguierre/cuenta_dni_clone/blob/master/screenshots/Screenshot_1644953358.png" height="700">
+<img src="https://github.com/laguierre/cuenta_dni_clone/blob/master/screenshots/Screenshot_1644953381.png" height="700">
+</p>
